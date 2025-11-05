@@ -46,17 +46,10 @@
     </div>
   </header>
 
-    <!-- VIDEO -->
+   <!-- VIDEO SECTION USING GIF -->
 <section id="video" class="video-section">
-  <video 
-    autoplay 
-    muted 
-    loop 
-    playsinline 
-    class="video-bg">
-    <source src="video/MAIRA XVIII PREDEBUT VIDEO.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  <div class="video-bg" style="background-image: url('video/MAIRA XVIII PREDEBUT VIDEO.gif'); background-size: cover; background-position: center;">
+  </div>
 
   <div class="video-overlay">
     <div class="video-content" data-aos="fade-up">
@@ -65,6 +58,7 @@
     </div>
   </div>
 </section>
+
 
   <!-- HERO -->
 <section id="home" class="hero plain-hero">
@@ -112,19 +106,27 @@
   </div>
 
   <div class="video-container" data-aos="fade-up" data-aos-delay="100">
-    <video
-      id="highlightVideo"
-      class="highlight-video"
-      src="video/MAIRA XVIII PREDEBUT VIDEO.mp4"
-      controls
-      playsinline
-      preload="auto"
-      poster="video/COVER.jpg"
-    ></video>
+    <div class="video-wrapper">
+      <!-- Poster image / thumbnail -->
+      <img src="/video/COVER.jpg" alt="PreDebut Video" class="video-poster" id="videoPoster">
+      
+      <!-- Video element (hidden initially) -->
+      <video class="video-bg" id="highlightVideo" playsinline>
+        <source href="https://www.facebook.com/share/v/17YJmbvHtS/" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Play button -->
+      <div class="play-button" id="playButton"><a class="play-button" href="https://www.facebook.com/share/v/17YJmbvHtS/" >▶</a></div>
+    </div>
   </div>
 </section>
 
-</section>
+
+
+
+
+
 
 
 
