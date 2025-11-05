@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MAIRA XVIII | Debut</title>
+  <meta name="description" content="Digital invitation — modern, responsive web invite.">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#FFF6F9">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <div class="brand">
+        <a href="#home" class="brand-link">
+          <img src="photos/logo.jpg" alt="logo" class="logo" />
+          <div class="brand-text">
+            <span class="event-name">MAIRA XVIII</span>
+            <small class="event-sub">November 22, 2025 · 5:00 PM</small>
+          </div>
+        </a>
+      </div>
+
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#video">Video</a></li>
+          <li><a href="#guests">Guests</a></li>
+          <li><a href="#details">Details</a></li>
+        </ul>
+       
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+    <!-- VIDEO -->
+<section id="video" class="video-section">
+  <video 
+    autoplay 
+    muted 
+    loop 
+    playsinline 
+    class="video-bg">
+    <source src="video/MAIRA XVIII PREDEBUT VIDEO.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="video-overlay">
+    <div class="video-content" data-aos="fade-up">
+      <h2 class="section-title">MAIRA XVIII</h2>
+      <p class="section-sub2">A Debut by NLLE FILMS</p>
+    </div>
+  </div>
+</section>
+
+  <!-- HERO -->
+<section id="home" class="hero plain-hero">
+  <div class="container hero-inner" data-aos="fade-up">
+    <div class="hero-card">
+      <h1 class="hero-title">You're Invited</h1>
+      <p class="hero-sub">Join us as we celebrate <strong>Maira Jowenah 18th Birthday</strong></p>
+      <p class="hero-date">November 22, 2025 · 5:00 PM</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#details">See Details</a>
+      </div>
+</section>
+
+
+
+  <!-- GALLERY / CAROUSEL -->
+<section id="gallery" class="gallery-section">
+  <div class="gallery-header" data-aos="fade-up">
+    <h2 class="section-title">Pre Debut Photo Highlights</h2>
+    <p class="section-sub">A few Snippets of the Cinematic Pre Debut Shoot</p>
+  </div>
+
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <!-- Replace src values with your images in /photos -->
+      <div class="swiper-slide"><img src="photos/115.webp" loading="lazy" alt="Photo 1"></div>
+      <div class="swiper-slide"><img src="photos/13.webp" loading="lazy" alt="Photo 2"></div>
+      <div class="swiper-slide"><img src="photos/2.webp" loading="lazy" alt="Photo 3"></div>
+      <div class="swiper-slide"><img src="photos/3.webp" loading="lazy" alt="Photo 4"></div>
+      <div class="swiper-slide"><img src="photos/61.webp" loading="lazy" alt="Photo 5"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <div class="hero-actions">
+        <a class="btn btn-primary" href="gallery.html">More Photos Here</a>
+      </div>
+</section>
+
+<section class="video-section" id="video">
+  <div class="video-header" data-aos="fade-up">
+    <h2 class="section-title1">The Cinematic PreDebut Video</h2>
+    <p class="section-sub1">A glimpse of the unforgettable moments 🎞️</p>
+  </div>
+
+  <div class="video-container" data-aos="fade-up" data-aos-delay="100">
+    <video
+      id="highlightVideo"
+      class="highlight-video"
+      src="video/MAIRA XVIII PREDEBUT VIDEO.mp4"
+      controls
+      playsinline
+      preload="auto"
+      poster="video/COVER.jpg"
+    ></video>
+  </div>
+</section>
+
+</section>
+
+
+
+
+
+  <!-- GUEST LIST -->
+<section id="guests" class="section guests-section">
+  <div class="container" data-aos="fade-up">
+    <h2 class="section-title">The 18’s</h2>
+    <p class="section-sub">We can’t wait to celebrate with everyone</p>
+
+    <!-- Category Tabs -->
+    <div class="guest-tabs">
+      <button class="guest-tab active" data-target="roses">18 Roses</button>
+      <button class="guest-tab" data-target="gifts">18 Gifts</button>
+      <button class="guest-tab" data-target="candles">18 Candles</button>
+      <button class="guest-tab" data-target="wines">18 Wines</button>
+    </div>
+
+    <!-- Guest Lists -->
+    <div class="guest-lists">
+      <!-- Roses -->
+      <div class="guest-grid active" id="roses">
+        <div class="guest-card">Mr. Glen Dipaysa</div>
+        <div class="guest-card">Mr. Grenan Dipaysa</div>
+        <div class="guest-card">Mr. Albert Lapitan</div>
+        <div class="guest-card">Mr. Leemuel Lubina</div>
+        <div class="guest-card">Mr. Les Legaspina</div>
+        <div class="guest-card">Mr. Renzil Dauz</div>
+        <div class="guest-card">Mr. Jason Arroyo</div>
+        <div class="guest-card">Ms. Jerzon Lutchina</div>
+        <div class="guest-card">Ms. John Daryl Cabatu</div>
+        <div class="guest-card">Ms. Jade Aguilar</div>
+        <div class="guest-card">Ms. Jefferson France Garcia</div>
+        <div class="guest-card">Ms. Jay Benavidez</div>
+        <div class="guest-card">Mr. Cyanne Jimenez</div>
+        <div class="guest-card">Ms. Cedrick Jake Doctor</div>
+        <div class="guest-card">Mr. Ejay Paredes</div>
+        <div class="guest-card">Mr. Marcos Paredes</div>
+        <div class="guest-card">Mr. Micheal Gabaldon</div>
+        <div class="guest-card">Mr. Melvin Gabaldon</div>
+      </div>
+
+      <!-- Gifts -->
+      <div class="guest-grid" id="gifts">
+        <div class="guest-card">Ms. Jenna Portez</div>
+        <div class="guest-card">Ms. Aira Gavina</div>
+        <div class="guest-card">Ms. Krisha Fabros</div>
+        <div class="guest-card">Ms. Cristie Lasquite</div>
+        <div class="guest-card">Mr. Mardave Labador</div>
+        <div class="guest-card">Ms. Jennielyn Doctor</div>
+        <div class="guest-card">Mrs. Harrenelle Paredes</div>
+        <div class="guest-card">Ms. Jzel Jimeno</div>
+        <div class="guest-card">Mrs. Kathleen Joy Lazo</div>
+        <div class="guest-card">Mr. Kevin Charles Paredes</div>
+        <div class="guest-card">Mr. Romeo Cortez</div>
+        <div class="guest-card">Mr. Augie Lorenzana</div>
+        <div class="guest-card">Mr. Jonathan Angelo</div>
+        <div class="guest-card">Mr. Regie Mosuela</div>
+        <div class="guest-card">Mr. Leemar Somera</div>
+        <div class="guest-card">Mrs. Lorivy Joy Fajardo Lanuza</div>
+        <div class="guest-card">Ms. Aaroon Defiesta</div>
+        <div class="guest-card">Mrs. Elma Callejo</div>
+      </div>
+
+      <!-- Candles -->
+      <div class="guest-grid" id="candles">
+        <div class="guest-card">Ms. Princess Gascon</div>
+        <div class="guest-card">Mr. Francis Labrador</div>
+        <div class="guest-card">Ms. Mia Lorenzana</div>
+        <div class="guest-card">Mr. Rolando Puno Jr.</div>
+        <div class="guest-card">Ms. Jeanica Andrea Calibuso</div>
+        <div class="guest-card">Ms. Ysabella Lorena</div>
+        <div class="guest-card">Ms. Lorraine Angel Lubina</div>
+        <div class="guest-card">Ms. Lorraine Medalla</div>
+        <div class="guest-card">Ms. Sophia Conchita Paredes</div>
+        <div class="guest-card">Mrs. Mary Ann Paredes</div>
+        <div class="guest-card">Mrs. Femarie Doctor</div>
+        <div class="guest-card">Ms. Rowena Paredes</div>
+        <div class="guest-card">Mr. Bobby Paredes</div>
+        <div class="guest-card">Ms. Merly Gabaldon</div>
+        <div class="guest-card">Ms. Medelyn Gabaldon</div>
+        <div class="guest-card">Ms. Pearly Jean Paredes</div>
+        <div class="guest-card">Mama Emily Gabaldon</div>
+        <div class="guest-card">Mommy Joydee Paredes</div>
+      </div>
+
+      <!-- Wines -->
+      <div class="guest-grid" id="wines">
+        <div class="guest-card">Ms. Jinavelle Kyle Paredes Mon</div>
+        <div class="guest-card">Atty. Charlotte Paredes Magumcia</div>
+        <div class="guest-card">Mr. Jhun Paredes</div>
+        <div class="guest-card">Mr. & Mrs. Honey and Cynthia Jimenez</div>
+        <div class="guest-card">Mrs. Rheyma Lianes Lazo</div>
+        <div class="guest-card">Mrs. Estrella Alejandro</div>
+        <div class="guest-card">Mr. & Mrs. Donn and Maribel Griffin</div>
+        <div class="guest-card">Mr. Levie Paredes Lazo</div>
+        <div class="guest-card">Mr. Jaymark Avecilla Mina</div>
+        <div class="guest-card">Mrs. Mildred Alejandro</div>
+        <div class="guest-card">Ms. Shyrmen Vanilla Lasquite</div>
+        <div class="guest-card">Mrs. Layla Sanchez</div>
+        <div class="guest-card">Ms. Elda Lacusong</div>
+        <div class="guest-card">Mr. Randy Doctor Jr.</div>
+        <div class="guest-card">Mr. Henry Leal</div>
+        <div class="guest-card">Mrs. Madelyn Divina</div>
+        <div class="guest-card">Mr. Roderick Aguilar</div>
+        <div class="guest-card">Ms. Mariz Mori</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- EVENT DETAILS -->
+<section id="details" class="section details-section">
+  <div class="container" data-aos="fade-up">
+    <h2 class="section-title">Event Details</h2>
+    <p class="section-sub">Here’s everything you need to know</p>
+
+    <div class="details-grid">
+      <div class="details-card">
+        <h3>Venue</h3>
+        <p>Bitalag, Tagudin, Ilocos Sur<br>(Paredes Residence)</p>
+        <a class="map-link" href="https://maps.google.com/?q=Bitalag,Tagudin,Ilocos+Sur" target="_blank" rel="noopener">📍 Open in Google Maps</a>
+      </div>
+
+      <div class="details-card">
+        <h3>Date & Time</h3>
+        <ul class="detail-list">
+          <li><strong>Date:</strong> November 22, 2025</li>
+          <li><strong>Time:</strong> 5:00 in the Afternoon</li>
+        </ul>
+      </div>
+
+      <div class="details-card">
+        <h3>Dress Code</h3>
+        <p>Disco/Bar Concept - Metallic, Sexy Dresses, Shimmer & Sparkle</p>
+        <p>*Note: There will be 3 Winners for the Best in Attire of the Night! (1 Boy, 1 Girl, 1 Lgbt).</p>
+      </div>
+
+    <!-- GIFT GUIDE (Interactive Accordion) -->
+    <div class="gift-guide">
+      <button class="gift-toggle">
+        <h3>🎁 Gift Guide</h3>
+        <span class="toggle-icon">+</span>
+      </button>
+
+      <div class="gift-content">
+        <ul>
+          <li><strong>Shoe size:</strong> 36</li>
+          <li><strong>Dress size:</strong> Extra Small</li>
+          <li><strong>Waistline:</strong> 24–25</li>
+          <li><strong>Jewelry:</strong> Silver</li>
+          <li><strong>Favorite Color:</strong> Burgundy Red</li>
+          <li><strong>Favorite Scent:</strong> Fruity &amp; Vanilla</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EVENT SUPPLIERS / CREDITS -->
+<section id="suppliers" class="suppliers-section">
+  <div class="container" data-aos="fade-up">
+    <h2 class="section-title">Event Suppliers</h2>
+    <p class="section-sub">The Amazing Event Teams</p>
+
+    <div class="suppliers-grid">
+        <!-- Featured Supplier -->
+    <div class="featured-supplier">
+      <p>Captured & Created By</p>
+      <a href="https://www.facebook.com/nllefilms" target="_blank" class="featured-link flinders-font">
+        NLLE <span>Films</span> 🎥
+      </a>
+    </div>
+
+      <div class="supplier-card">
+        <h3>HMUA & Styling</h3>
+        <p class="supplier-name">Madam Richard Aglibot & Asunta</p>
+      </div>
+
+      <div class="supplier-card">
+        <h3>Lights & Sounds</h3>
+        <p class="supplier-name">Bunoan Lights & Sounds</p>
+      </div>
+
+      <div class="supplier-card">
+        <h3>Emcee</h3>
+        <p class="supplier-name">Mr. Melou Linda</p>
+      </div>
+      <div class="supplier-card1">
+        <p>*DJ Booth is Open for All who wants to Hype the Party!</p>
+      </div>
+
+      
+    </div>
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p>Made with <span aria-hidden="true">💖</span> by NLLE FILMS</p>
+      </div>
+      
+    </div>
+  </footer>
+
+  <!-- Dependencies (Swiper, AOS) and custom script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
