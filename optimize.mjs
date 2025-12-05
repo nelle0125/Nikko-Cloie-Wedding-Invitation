@@ -12,16 +12,19 @@ const files = fs.readdirSync(inputDir);
 
 (async () => {
   for (const file of files) {
+    // Only process jpg/jpeg/png
     if (!/\.(jpg|jpeg|png)$/i.test(file)) continue;
 
-    const inputPath = path.join(inputDir, file);
-    const outputPath = path.join(outputDir, `${path.parse(file).name}.webp`);
+    // Safely join paths (handles special chars)
+    const inputPath = path.resolve(inputDir, file);
+    const outputPath = path.resolve(outputDir, `${path.parse(file).name}.webp`);
 
     try {
       await sharp(inputPath)
         .resize({ width: 1920 })
         .webp({ quality: 85 })
         .toFile(outputPath);
+
       console.log(`✅ Optimized: ${file}`);
     } catch (err) {
       console.error(`❌ Failed: ${file}`, err);
@@ -30,4 +33,3 @@ const files = fs.readdirSync(inputDir);
 
   console.log("\n🎉 All images optimized successfully!");
 })();
-
